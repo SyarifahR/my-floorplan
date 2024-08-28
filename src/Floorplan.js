@@ -9,14 +9,13 @@ const Floorplan = () => {
 
   useEffect(() => {
     const loader = new STLLoader();
-    loader.load('/floorplan(resurface).stl', (loadedGeometry) => {
+    loader.load('/floorplan1.stl', (loadedGeometry) => {
       setGeometry(loadedGeometry);
     });
   }, []);
 
   return (
-    <Canvas className="myCanvas">
-      <color attach="background" args={['white']} />
+    <Canvas style={{ width: '90vw', height: '90vh', background: 'white' }} >
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       {geometry && (

@@ -15,7 +15,7 @@ const Floorplan = () => {
   }, []);
 
   return (
-    <Canvas style={{ width: '90vw', height: '90vh', background: 'white' }} >
+    <Canvas style={{ width: '100vw', height: '90vh', background: 'white' }} >
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       {geometry && (

@@ -9,9 +9,9 @@ const Floorplan = () => {
 
   useEffect(() => {
     const loader = new STLLoader();
-    loader.load('/floorplan1.stl', (loadedGeometry) => {
-      setGeometry(loadedGeometry);
-    });
+    loader.load('/Floorplan_1_text_d0.1.stl', (loadedGeometry) => {setGeometry(loadedGeometry);});
+    //loader.load('/Floorplan_1_withouttext_d0.1.stl', (loadedGeometry) => {setGeometry(loadedGeometry);});
+    //loader.load('/Floorplan_2_withouttext_d0.1.stl', (loadedGeometry) => {setGeometry(loadedGeometry);});
   }, []);
 
   return (
